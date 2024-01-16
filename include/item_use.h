@@ -39,6 +39,7 @@ void ItemUseInBattle_BagMenu(u8 taskId);
 void ItemUseInBattle_PartyMenu(u8 taskId);
 void ItemUseInBattle_PartyMenuChooseMove(u8 taskId);
 void Task_UseDigEscapeRopeOnField(u8 taskId);
+void ItemUseOutOfBattle_PokeBall(u8);
 u8 CanUseDigOrEscapeRopeOnCurMap(void);
 u8 CheckIfItemIsTMHMOrEvolutionStone(u16 itemId);
 void FieldUseFunc_VsSeeker(u8 taskId);
