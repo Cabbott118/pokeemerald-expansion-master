@@ -2,6 +2,7 @@
 #include "palette.h"
 #include "palette_util.h"
 #include "util.h"
+#include "overworld.h"
 
 // "RouletteFlash" is more accurately a general flashing/fading util
 // this file handles fading the palettes for the color/icon selections on the Roulette wheel
@@ -39,16 +40,17 @@ u8 RouletteFlash_Add(struct RouletteFlashUtil *flash, u8 id, const struct Roulet
     return id;
 }
 
-static u8 UNUSED RouletteFlash_Remove(struct RouletteFlashUtil *flash, u8 id)
-{
-    if (id >= ARRAY_COUNT(flash->palettes))
-        return 0xFF;
-    if (!flash->palettes[id].available)
-        return 0xFF;
+// Unused
+// static u8 RouletteFlash_Remove(struct RouletteFlashUtil *flash, u8 id)
+// {
+//     if (id >= ARRAY_COUNT(flash->palettes))
+//         return 0xFF;
+//     if (!flash->palettes[id].available)
+//         return 0xFF;
 
-    memset(&flash->palettes[id], 0, sizeof(flash->palettes[id]));
-    return id;
-}
+//     memset(&flash->palettes[id], 0, sizeof(flash->palettes[id]));
+//     return id;
+// }
 
 static u8 RouletteFlash_FadePalette(struct RouletteFlashPalette *pal)
 {
@@ -384,8 +386,9 @@ void UpdatePulseBlend(struct PulseBlend *pulseBlend)
                 if (--pulseBlendPalette->delayCounter == 0xFF)
                 {
                     pulseBlendPalette->delayCounter = pulseBlendPalette->pulseBlendSettings.delay;
-                    BlendPalette(pulseBlendPalette->pulseBlendSettings.paletteOffset, pulseBlendPalette->pulseBlendSettings.numColors, pulseBlendPalette->blendCoeff, pulseBlendPalette->pulseBlendSettings.blendColor);
-                    switch (pulseBlendPalette->pulseBlendSettings.fadeType)
+                    CpuFastCopy(gPlttBufferUnfaded + pulseBlendPalette->pulseBlendSettings.paletteOffset, gPlttBufferFaded + pulseBlendPalette->pulseBlendSettings.paletteOffset, 32);
+                    UpdatePalettesWithTime(1 << (pulseBlendPalette->pulseBlendSettings.paletteOffset >> 4));
+                    BlendPalettesFine(1, gPlttBufferFaded + pulseBlendPalette->pulseBlendSettings.paletteOffset, gPlttBufferFaded + pulseBlendPalette->pulseBlendSettings.paletteOffset, pulseBlendPalette->blendCoeff, pulseBlendPalette->pulseBlendSettings.blendColor);                    switch (pulseBlendPalette->pulseBlendSettings.fadeType)
                     {
                     case 0: // Fade all the way to the max blend amount, then wrap around
                         // BUG: This comparison will never be true for maxBlendCoeff values that are >= 8. This is because
@@ -469,35 +472,35 @@ void SetTilemapRect(u16 *dest, u16 *src, u8 left, u8 top, u8 width, u8 height)
     }
 }
 
-static void UNUSED FillTilemapRect_Unused(void *dest, u16 value, u8 left, u8 top, u8 width, u8 height)
-{
-    u8 i, j;
-    u8 x, y;
+// static void FillTilemapRect_Unused(void *dest, u16 value, u8 left, u8 top, u8 width, u8 height)
+// {
+//     u8 i, j;
+//     u8 x, y;
 
-    for (i = 0, y = top; i < height; i++)
-    {
-        for (x = left, j = 0; j < width; j++)
-        {
-            *(u16 *)((dest) + (y * 64 + x * 2)) = value;
-            x = (x + 1) % 32;
-        }
-        y = (y + 1) % 32;
-    }
-}
+//     for (i = 0, y = top; i < height; i++)
+//     {
+//         for (x = left, j = 0; j < width; j++)
+//         {
+//             *(u16 *)((dest) + (y * 64 + x * 2)) = value;
+//             x = (x + 1) % 32;
+//         }
+//         y = (y + 1) % 32;
+//     }
+// }
 
-static void UNUSED SetTilemapRect_Unused(void *dest, const u16 *src, u8 left, u8 top, u8 width, u8 height)
-{
-    u8 i, j;
-    u8 x, y;
-    const u16 *_src;
+// static void SetTilemapRect_Unused(void *dest, const u16 *src, u8 left, u8 top, u8 width, u8 height)
+// {
+//     u8 i, j;
+//     u8 x, y;
+//     const u16 *_src;
 
-    for (i = 0, _src = src, y = top; i < height; i++)
-    {
-        for (x = left, j = 0; j < width; j++)
-        {
-            *(u16 *)((dest) + (y * 64 + x * 2)) = *(_src++);
-            x = (x + 1) % 32;
-        }
-        y = (y + 1) % 32;
-    }
-}
+//     for (i = 0, _src = src, y = top; i < height; i++)
+//     {
+//         for (x = left, j = 0; j < width; j++)
+//         {
+//             *(u16 *)((dest) + (y * 64 + x * 2)) = *(_src++);
+//             x = (x + 1) % 32;
+//         }
+//         y = (y + 1) % 32;
+//     }
+// }
