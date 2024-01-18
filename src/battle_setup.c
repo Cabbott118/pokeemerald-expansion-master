@@ -986,7 +986,7 @@ static void CB2_GiveStarter(void)
     *GetVarPointer(VAR_STARTER_MON) = gSpecialVar_Result;
     starterMon = GetStarterPokemon(gSpecialVar_Result);
     // Use the declared ivs and evs arrays in the function call
-    ScriptGiveCustomMon(starterMon, 5, ITEM_ORAN_BERRY, ITEM_POKE_BALL, NUM_NATURES, 0, evs, ivs, NULL, TRUE);
+    ScriptGiveCustomMon(starterMon, 5, ITEM_ORAN_BERRY, ITEM_POKE_BALL, NUM_NATURES, 0, evs, ivs, NULL, FALSE);
     ResetTasks();
     PlayBattleBGM();
     SetMainCallback2(CB2_StartFirstBattle);

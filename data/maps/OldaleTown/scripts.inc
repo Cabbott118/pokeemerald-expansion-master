@@ -1,6 +1,6 @@
 .set LOCALID_MART_EMPLOYEE, 2
 .set LOCALID_FOOTPRINTS_MAN, 3
-.set LOCALID_RIVAL, 4
+.set LOCALID_RIVAL, 5
 
 OldaleTown_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, OldaleTown_OnTransition
@@ -417,14 +417,14 @@ Script_CheckStarter::
 
 CheckTreecko:
 	bufferspeciesname 1, SPECIES_SQUIRTLE
-	goto_if_set FLAG_UNUSED_0x021, Script_HasBeenGivenPokemon
+	goto_if_set FLAG_KANTO_STARTER_RECEIVED, Script_HasBeenGivenPokemon
     msgbox Text_GiveKantoStarter, MSGBOX_DEFAULT
 	getpartysize
 	compare VAR_RESULT, 6
 	goto_if_eq Script_PlayerHasFullParty
 	givecustommon SPECIES_SQUIRTLE, 5, ITEM_NONE, ITEM_CHERISH_BALL, NATURE_MODEST, 0, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31
 	playfanfare MUS_OBTAIN_ITEM
-	setflag FLAG_UNUSED_0x021
+	setflag FLAG_KANTO_STARTER_RECEIVED
 	msgbox Text_PlayerReceivedKantoStarter, MSGBOX_DEFAULT
 	waitfanfare
 	release
@@ -432,14 +432,14 @@ CheckTreecko:
 
 CheckTorchic:
 	bufferspeciesname 1, SPECIES_BULBASAUR
-	goto_if_set FLAG_UNUSED_0x021, Script_HasBeenGivenPokemon
+	goto_if_set FLAG_KANTO_STARTER_RECEIVED, Script_HasBeenGivenPokemon
     msgbox Text_GiveKantoStarter, MSGBOX_DEFAULT
 	getpartysize
 	compare VAR_RESULT, 6
 	goto_if_eq Script_PlayerHasFullParty
 	givecustommon SPECIES_BULBASAUR, 5, ITEM_NONE, ITEM_CHERISH_BALL, NATURE_MODEST, 0, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31
 	playfanfare MUS_OBTAIN_ITEM
-	setflag FLAG_UNUSED_0x021
+	setflag FLAG_KANTO_STARTER_RECEIVED
 	msgbox Text_PlayerReceivedKantoStarter, MSGBOX_DEFAULT
 	waitfanfare
 	release
@@ -447,14 +447,14 @@ CheckTorchic:
 
 CheckMudkip:
 	bufferspeciesname 1, SPECIES_CHARMANDER
-	goto_if_set FLAG_UNUSED_0x021, Script_HasBeenGivenPokemon
+	goto_if_set FLAG_KANTO_STARTER_RECEIVED, Script_HasBeenGivenPokemon
     msgbox Text_GiveKantoStarter, MSGBOX_DEFAULT
 	getpartysize
 	compare VAR_RESULT, 6
 	goto_if_eq Script_PlayerHasFullParty
 	givecustommon SPECIES_CHARMANDER, 5, ITEM_NONE, ITEM_CHERISH_BALL, NATURE_MODEST, 0, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31
 	playfanfare MUS_OBTAIN_ITEM
-	setflag FLAG_UNUSED_0x021
+	setflag FLAG_KANTO_STARTER_RECEIVED
 	msgbox Text_PlayerReceivedKantoStarter, MSGBOX_DEFAULT
 	waitfanfare
 	release
