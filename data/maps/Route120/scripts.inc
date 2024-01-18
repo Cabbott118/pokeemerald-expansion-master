@@ -220,6 +220,21 @@ Route120_EventScript_StevenGiveDeconScope::
 	msgbox Route120_Text_StevenGiveDevonScope, MSGBOX_DEFAULT
 	giveitem ITEM_DEVON_SCOPE
 	setflag FLAG_RECEIVED_DEVON_SCOPE
+	msgbox Route120_Text_StevenGiveMegaRing, MSGBOX_DEFAULT
+	giveitem ITEM_MEGA_RING
+	msgbox Route120_Text_StevenGiveMegaStones, MSGBOX_DEFAULT
+	compare VAR_STARTER_MON, 0
+    goto_if_eq Route120_Script_CheckTreecko
+
+    compare VAR_STARTER_MON, 1
+    goto_if_eq Route120_Script_CheckTorchic
+
+    compare VAR_STARTER_MON, 2
+    goto_if_eq Route120_Script_CheckMudkip
+	release
+	end
+
+Route120_EventScript_StevenFinalWords::
 	msgbox Route120_Text_StevenGoodbye, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_STEVEN, Common_Movement_WalkInPlaceFasterDown
@@ -237,6 +252,22 @@ Route120_EventScript_StevenGiveDeconScope::
 	special DrawWholeMapView
 	release
 	end
+
+Route120_Script_CheckTreecko:
+	giveitem ITEM_SCEPTILITE
+	giveitem ITEM_BLASTOISINITE
+	goto Route120_EventScript_StevenFinalWords
+
+Route120_Script_CheckTorchic:
+	giveitem ITEM_BLAZIKENITE
+	giveitem ITEM_VENUSAURITE
+	goto Route120_EventScript_StevenFinalWords
+
+Route120_Script_CheckMudkip:
+	giveitem ITEM_SWAMPERTITE
+	giveitem ITEM_CHARIZARDITE_X
+	giveitem ITEM_CHARIZARDITE_Y
+	goto Route120_EventScript_StevenFinalWords
 
 Route120_EventScript_PlayerApproachKecleonNorth::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
@@ -363,7 +394,7 @@ Route120_EventScript_Callie::
 	end
 
 Route120_Text_StevenGreeting:
-	.string "STEVEN: Hm? {PLAYER}{KUN}, hi.\n"
+	.string "Steven: Hm? {PLAYER}{KUN}, hi.\n"
 	.string "It's been a while.\p"
 	.string "There's something here that you can't\n"
 	.string "see, right?\p"
@@ -372,40 +403,59 @@ Route120_Text_StevenGreeting:
 	.string "No, no. Rather than describing it,\n"
 	.string "I should just show you.\l"
 	.string "That would be more fun.\p"
-	.string "{PLAYER}{KUN}, are your POKéMON ready for\n"
+	.string "{PLAYER}{KUN}, are your Pokémon ready for\n"
 	.string "battle?$"
 
 Route120_Text_StevenIllWaitHere:
-	.string "STEVEN: No?\p"
+	.string "Steven: No?\p"
 	.string "I'll wait here, so you can get ready.$"
 
 Route120_Text_StevenReadyForBattle:
-	.string "STEVEN: {PLAYER}{KUN}, are your POKéMON\n"
+	.string "Steven: {PLAYER}{KUN}, are your Pokémon\n"
 	.string "ready for battle?$"
 
 Route120_Text_StevenShowMeYourPower:
-	.string "STEVEN: {PLAYER}{KUN}, show me your true\n"
-	.string "power as a TRAINER!$"
+	.string "Steven: {PLAYER}{KUN}, show me your true\n"
+	.string "power as a Trainer!$"
 
 Route120_Text_StevenUsedDevonScope:
-	.string "STEVEN used the DEVON SCOPE.\p"
-	.string "An invisible POKéMON became completely\n"
+	.string "Steven used the Devon Scope.\p"
+	.string "An invisible Pokémon became completely\n"
 	.string "visible!\p"
-	.string "The startled POKéMON attacked!$"
+	.string "The startled Pokémon attacked!$"
 
 Route120_Text_StevenGiveDevonScope:
-	.string "STEVEN: I see…\n"
+	.string "Steven: I see…\n"
 	.string "Your battle style is intriguing.\p"
-	.string "Your POKéMON have obviously grown\n"
-	.string "since I first met you in DEWFORD.\p"
+	.string "Your Pokémon have obviously grown\n"
+	.string "since I first met you in Dewford.\p"
 	.string "I'd like you to have this\n"
-	.string "DEVON SCOPE.\p"
+	.string "Devon Scope.\p"
 	.string "Who knows, there may be other\n"
-	.string "concealed POKéMON.$"
+	.string "concealed Pokémon.$"
+
+Route120_Text_StevenGiveMegaRing:
+	.string "Steven: {PLAYER}…\p"
+	.string "I think it's time you take on Winona.\p"
+	.string "The bond you share with your Pokémon\n"
+	.string "is a special one.\p"
+	.string "Take this…\n"
+	.string "It's called a Mega Ring.\p"
+	.string "The Mega Ring is a device that allows\n"
+	.string "certain Pokémon to tap into an\l"
+	.string "ancient power… Mega Evolution.\p"
+	.string "Scattered throughout Hoenn you\n"
+	.string "will find Mega Stones specific to\l"
+	.string "a Pokémon.$"
+
+Route120_Text_StevenGiveMegaStones:
+	.string "Steven: I happened across these stones\n"
+	.string "on my journey.\l"
+	.string "You should have them.$"
 
 Route120_Text_StevenGoodbye:
-	.string "STEVEN: {PLAYER}{KUN}.\p"
-	.string "I enjoy seeing POKéMON and TRAINERS\n"
+	.string "Steven: {PLAYER}{KUN}.\p"
+	.string "I enjoy seeing Pokémon and Trainers\n"
 	.string "who strive together.\p"
 	.string "I think you're doing great.\p"
 	.string "Well, let's meet again somewhere.$"
@@ -415,18 +465,18 @@ Kecleon_Text_SomethingUnseeable:
 
 Kecleon_Text_WantToUseDevonScope:
 	.string "Something unseeable is in the way.\p"
-	.string "Want to use the DEVON SCOPE?$"
+	.string "Want to use the Devon Scope?$"
 
 Kecleon_Text_UseDevonScopeMonAttacked:
-	.string "{PLAYER} used the DEVON SCOPE.\p"
-	.string "An invisible POKéMON became completely\n"
+	.string "{PLAYER} used the Devon Scope.\p"
+	.string "An invisible Pokémon became completely\n"
 	.string "visible!\p"
-	.string "The startled POKéMON attacked!$"
+	.string "The startled Pokémon attacked!$"
 
 Route120_Text_RouteSignFortree:
-	.string "ROUTE 120\n"
-	.string "{LEFT_ARROW} FORTREE CITY$"
+	.string "Route 120\n"
+	.string "{LEFT_ARROW} Fortree City$"
 
 Route120_Text_RouteSign121:
-	.string "{RIGHT_ARROW} ROUTE 121\n"
-	.string "{LEFT_ARROW} ROUTE 120$"
+	.string "{RIGHT_ARROW} Route 121\n"
+	.string "{LEFT_ARROW} Route 120$"
