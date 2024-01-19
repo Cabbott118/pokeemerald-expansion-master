@@ -303,52 +303,76 @@ static u8 ChooseWildMonIndex_Fishing(u8 rod)
     return wildMonIndex;
 }
 
-static u8 ChooseWildMonLevel(const struct WildPokemon *wildPokemon, u8 wildMonIndex, u8 area)
-{
-    u8 min;
-    u8 max;
-    u8 range;
-    u8 rand;
+static u8 CalculateFixedLevel(struct Pokemon *party, u8 numPartyMembers) {
+    u8 fixedLVL = 0;
 
-    if (LURE_STEP_COUNT == 0)
-    {
-        // Make sure minimum level is less than maximum level
-        if (wildPokemon[wildMonIndex].maxLevel >= wildPokemon[wildMonIndex].minLevel)
-        {
+    for (u8 count = 0; count < numPartyMembers; ++count) {
+        if (GetMonData(&party[count], MON_DATA_SPECIES) != SPECIES_NONE) {
+            fixedLVL += GetMonData(&party[count], MON_DATA_LEVEL);
+        }
+    }
+    return (numPartyMembers > 0) ? fixedLVL / numPartyMembers : 0;
+}
+
+static u8 ChooseWildMonLevel(const struct WildPokemon *wildPokemon, u8 wildMonIndex, u8 area) {
+    u8 min, max, range, rand;
+
+    if (LURE_STEP_COUNT == 0) {
+        if (VarGet(VAR_DIFFICULTY) == DIFFICULTY_HARD) {
+            u8 fixedLVL = CalculateFixedLevel(gPlayerParty, CalculatePlayerPartyCount());
+
+            // Make sure minimum level is less than maximum level
+            min = (fixedLVL > 3) ? fixedLVL - 3 : 1;
+            max = fixedLVL + 3;
+
+            range = max - min + 1;
+            rand = Random() % range;
+
+            // Check ability for max level mon
+            if (!GetMonData(&gPlayerParty[0], MON_DATA_SANITY_IS_EGG)) {
+                u16 ability = GetMonAbility(&gPlayerParty[0]);
+                if ((ability == ABILITY_HUSTLE || ability == ABILITY_VITAL_SPIRIT || ability == ABILITY_PRESSURE) && Random() % 2 == 0) {
+                    return max;
+                }
+
+                if (rand != 0) rand--;
+            }
+
+            return min + rand;
+        } else {
+            // Make sure minimum level is less than maximum level
             min = wildPokemon[wildMonIndex].minLevel;
             max = wildPokemon[wildMonIndex].maxLevel;
-        }
-        else
-        {
-            min = wildPokemon[wildMonIndex].maxLevel;
-            max = wildPokemon[wildMonIndex].minLevel;
-        }
-        range = max - min + 1;
-        rand = Random() % range;
 
-        // check ability for max level mon
-        if (!GetMonData(&gPlayerParty[0], MON_DATA_SANITY_IS_EGG))
-        {
-            u16 ability = GetMonAbility(&gPlayerParty[0]);
-            if (ability == ABILITY_HUSTLE || ability == ABILITY_VITAL_SPIRIT || ability == ABILITY_PRESSURE)
-            {
-                if (Random() % 2 == 0)
-                    return max;
-
-                if (rand != 0)
-                    rand--;
+            if (wildPokemon[wildMonIndex].maxLevel < wildPokemon[wildMonIndex].minLevel) {
+                min = wildPokemon[wildMonIndex].maxLevel;
+                max = wildPokemon[wildMonIndex].minLevel;
             }
+
+            range = max - min + 1;
+            rand = Random() % range;
+
+            // Check ability for max level mon
+            if (!GetMonData(&gPlayerParty[0], MON_DATA_SANITY_IS_EGG)) {
+                u16 ability = GetMonAbility(&gPlayerParty[0]);
+                if ((ability == ABILITY_HUSTLE || ability == ABILITY_VITAL_SPIRIT || ability == ABILITY_PRESSURE) && Random() % 2 == 0) {
+                    return max;
+                }
+
+                if (rand != 0) rand--;
+            }
+
+            return min + rand;
         }
-        return min + rand;
-    }
-    else
-    {
+    } else {
         // Looks for the max level of all slots that share the same species as the selected slot.
         max = GetMaxLevelOfSpeciesInWildTable(wildPokemon, wildPokemon[wildMonIndex].species, area);
-        if (max > 0)
-            return max + 1;
-        else // Failsafe
-            return wildPokemon[wildMonIndex].maxLevel + 1;
+
+        if (VarGet(VAR_DIFFICULTY) == DIFFICULTY_HARD) {
+            return (max > 0) ? max + 1 : wildPokemon[wildMonIndex].maxLevel + 1;
+        } else {
+            return (max > 0) ? max + 1 : wildPokemon[wildMonIndex].maxLevel + 1;
+        }
     }
 }
 
