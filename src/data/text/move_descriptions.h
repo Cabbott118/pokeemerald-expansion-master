@@ -949,8 +949,8 @@ static const u8 sIronTailDescription[] = _(
     "tail. May lower Defense.");
 
 static const u8 sMetalClawDescription[] = _(
-    "A claw attack that may\n"
-    "raise the user's Attack.");
+    "A claw attack that\n"
+    "raises the user's Attack.");
 
 static const u8 sVitalThrowDescription[] = _(
     "Makes the user's move last,\n"

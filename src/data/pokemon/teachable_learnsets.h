@@ -7486,6 +7486,7 @@ static const u16 sGyaradosTeachableLearnset[] = {
     MOVE_FACADE,
     MOVE_FIRE_BLAST,
     MOVE_FLAMETHROWER,
+    MOVE_FLY,
     MOVE_FRUSTRATION,
     MOVE_HAIL,
     MOVE_HIDDEN_POWER,

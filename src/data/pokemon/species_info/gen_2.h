@@ -4732,13 +4732,13 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     [SPECIES_SKARMORY] =
     {
         .baseHP        = 65,
-        .baseAttack    = 80,
+        .baseAttack    = 90,
         .baseDefense   = 140,
         .baseSpeed     = 70,
         .baseSpAttack  = 40,
         .baseSpDefense = 70,
         .types = { TYPE_STEEL, TYPE_FLYING },
-        .catchRate = 25,
+        .catchRate = 190,
         .expYield = 163,
         .evYield_Defense = 2,
         .itemRare = ITEM_METAL_COAT,
