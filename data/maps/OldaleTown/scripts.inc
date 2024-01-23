@@ -489,3 +489,4 @@ Script_PlayerHasFullParty::
 
 Text_PlayerHasFullParty:
 	.string "Ah, your party is full.$"
+	
