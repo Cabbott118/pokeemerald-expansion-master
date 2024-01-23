@@ -1070,3 +1070,4 @@ LittlerootTown_ProfessorBirchsLab_Text_SelectedHard:
 LittlerootTown_ProfessorBirchsLab_Text_SelectedCancel:
 	.string "Difficulty was\n"
 	.string "unchanged.$"
+	

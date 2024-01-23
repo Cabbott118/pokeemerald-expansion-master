@@ -12,7 +12,8 @@ gText_IllTakeYourPkmn::
 gText_RestoredPkmnToFullHealth::
 	.string "Thank you for waiting.\p"
 	.string "We've restored your POKéMON\n"
-	.string "to full health.$"
+	.string "to full health.\p"
+	.string "Your Level Cap is currently {STR_VAR_1}.$"
 
 gText_WeHopeToSeeYouAgain::
 	.string "We hope to see you again!$"
