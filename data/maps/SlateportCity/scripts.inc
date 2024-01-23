@@ -518,6 +518,24 @@ SlateportCity_PokemartDecor_Dolls:
 	release
 	end
 
+SlateportCity_EventScript_AbilityDealer::
+	lock
+	faceplayer
+	message SlateportCity_Text_WouldYouLikeSomeGoods
+	waitmessage
+	pokemart SlateportCity_AbilityShop
+	msgbox SlateportCity_Text_HopeYouEnjoy, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+SlateportCity_AbilityShop:
+	.2byte ITEM_ABILITY_CAPSULE
+	.2byte ITEM_ABILITY_PATCH
+	.2byte ITEM_NONE
+	release
+	end
+
 SlateportCity_EventScript_ComeBackWithSecretPower::
 	msgbox gText_ComeBackWithSecretPower, MSGBOX_DEFAULT
 	release
@@ -1383,3 +1401,18 @@ SlateportCity_Text_TakingBattleTentChallenge:
 	.string "After all, a tough TRAINER is\n"
 	.string "the perfect fit for the BATTLE TENT!\p"
 	.string "Give it your best effort!$"
+
+SlateportCity_Text_WouldYouLikeSomeGoods:
+	.string "Woah! You scared me, there.\n"
+	.string "I was taking a bite of my carrot cake.\n"
+	.string "I'm the Ability Dealer.\p"
+	.string "Could I interest you in some of\n"
+	.string "my goods?$"
+
+SlateportCity_Text_HopeYouEnjoy:
+	.string "I'm always here if you need\n"
+	.string "to change you Pokémon's ability.\p"
+	.string "Go get 'em, champ!$"
+
+
+
