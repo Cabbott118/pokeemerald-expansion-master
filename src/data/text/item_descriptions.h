@@ -1306,7 +1306,7 @@ static const u8 sBlackAuguriteDesc[] = _(
     "evolve.");;
 
 static const u8 sLinkingCordDesc[] = _(
-    "A mysterious string\n"
+    "A mysterious cord\n"
     "that makes some\n"
     "Pokémon evolve.");
 

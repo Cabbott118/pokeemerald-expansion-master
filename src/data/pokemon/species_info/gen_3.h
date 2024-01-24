@@ -1590,7 +1590,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = { EGG_GROUP_WATER_1, EGG_GROUP_FLYING },
-        .abilities = { ABILITY_KEEN_EYE, ABILITY_DRIZZLE, ABILITY_RAIN_DISH },
+        .abilities = { ABILITY_DRIZZLE, ABILITY_DRIZZLE, ABILITY_RAIN_DISH },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Pelipper"),
         .cryId = CRY_PELIPPER,
@@ -3055,7 +3055,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 35,
         .friendship = 35,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = { EGG_GROUP_MONSTER, EGG_GROUP_MONSTER },
         .abilities = { ABILITY_STURDY, ABILITY_ROCK_HEAD, ABILITY_HEAVY_METAL },
         .bodyColor = BODY_COLOR_GRAY,
@@ -3085,7 +3085,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         ICON(Aron, 2),
         .footprint = gMonFootprint_Aron,
         LEARNSETS(Aron),
-        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_LAIRON}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_LAIRON}),
     },
 
     [SPECIES_LAIRON] =
@@ -3104,7 +3104,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 35,
         .friendship = 35,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = { EGG_GROUP_MONSTER, EGG_GROUP_MONSTER },
         .abilities = { ABILITY_STURDY, ABILITY_ROCK_HEAD, ABILITY_HEAVY_METAL },
         .bodyColor = BODY_COLOR_GRAY,
@@ -3134,7 +3134,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         ICON(Lairon, 2),
         .footprint = gMonFootprint_Lairon,
         LEARNSETS(Lairon),
-        .evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_AGGRON}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_AGGRON}),
     },
 
 #define AGGRON_MISC_INFO                                        \
@@ -3144,7 +3144,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .genderRatio = PERCENT_FEMALE(50),                      \
         .eggCycles = 35,                                        \
         .friendship = 35,                                       \
-        .growthRate = GROWTH_SLOW,                              \
+        .growthRate = GROWTH_MEDIUM_SLOW,                              \
         .eggGroups = { EGG_GROUP_MONSTER, EGG_GROUP_MONSTER },  \
         .bodyColor = BODY_COLOR_GRAY,                           \
         .speciesName = _("Aggron"),                             \
@@ -4609,7 +4609,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         ICON(Trapinch, 0),
         .footprint = gMonFootprint_Trapinch,
         LEARNSETS(Trapinch),
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_VIBRAVA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_VIBRAVA}),
     },
 
     [SPECIES_VIBRAVA] =
@@ -4662,7 +4662,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         ICON(Vibrava, 1),
         .footprint = gMonFootprint_Vibrava,
         LEARNSETS(Vibrava),
-        .evolutions = EVOLUTION({EVO_LEVEL, 45, SPECIES_FLYGON}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_FLYGON}),
     },
 
     [SPECIES_FLYGON] =
@@ -4671,7 +4671,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseAttack    = 100,
         .baseDefense   = 80,
         .baseSpeed     = 100,
-        .baseSpAttack  = 80,
+        .baseSpAttack  = 100,
         .baseSpDefense = 80,
         .types = { TYPE_GROUND, TYPE_DRAGON },
         .catchRate = 45,
@@ -4866,7 +4866,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         ICON(Swablu, 0),
         .footprint = gMonFootprint_Swablu,
         LEARNSETS(Swablu),
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_ALTARIA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_ALTARIA}),
     },
 
 #define ALTARIA_MISC_INFO                                   \

@@ -6727,7 +6727,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         PALETTES(Grimer),
         ICON(Grimer, 2),
         LEARNSETS(Grimer),
-        .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_MUK}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_MUK}),
     },
 
     [SPECIES_MUK] =
@@ -7542,7 +7542,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,                                      \
         .growthRate = GROWTH_MEDIUM_FAST,                                       \
         .eggGroups = { EGG_GROUP_MINERAL, EGG_GROUP_MINERAL },                  \
-        .abilities = { ABILITY_SOUNDPROOF, ABILITY_STATIC, ABILITY_AFTERMATH }, \
+        .abilities = { ABILITY_ELECTRIC_SURGE, ABILITY_ELECTRIC_SURGE, ABILITY_AFTERMATH }, \
         .bodyColor = BODY_COLOR_RED
 
 #define VOLTORB_MISC_INFO                                   \
@@ -8312,7 +8312,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Koffing, 2),
         .footprint = gMonFootprint_Koffing,
         LEARNSETS(Koffing),
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_WEEZING},
+        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_WEEZING},
                                 {EVO_NONE, 0, SPECIES_WEEZING_GALARIAN}),
     },
 
