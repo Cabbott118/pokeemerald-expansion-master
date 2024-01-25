@@ -261,8 +261,8 @@ static const TaskFunc sShutdownTasks[] = {
 };
 
 static const char sASCII_PokemonSioInfo[] = "PokemonSioInfo";
-static const char sASCII_LinkLossDisconnect[] = "LINK LOSS DISCONNECT!";
-static const char sASCII_LinkLossRecoveryNow[] = "LINK LOSS RECOVERY NOW";
+static const char sASCII_LinkLossDisconnect[] = "Link LOSS DISCONNECT!";
+static const char sASCII_LinkLossRecoveryNow[] = "Link LOSS RECOVERY NOW";
 ALIGNED(4) static const char sASCII_30Spaces[] = {"                              "};
 static const char sASCII_15Spaces[] = {"               "};
 static const char sASCII_8Spaces[] = {"        "};

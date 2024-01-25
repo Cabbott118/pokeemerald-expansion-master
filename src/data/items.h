@@ -8722,7 +8722,7 @@ const struct Item gItems[] =
 
     [ITEM_DOWSING_MACHINE] =
     {
-        .name = _("Dowsing MCHN"),
+        .name = _("Dowsing Mchn"),
         .price = 0,
         .description = sDowsingMachineDesc,
         .importance = 1,

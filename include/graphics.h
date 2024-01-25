@@ -1825,7 +1825,7 @@ extern const u32 gItemIcon_Gem[];
 extern const u32 gItemIconPalette_Ruby[];
 extern const u32 gItemIconPalette_Sapphire[];
 
-// GEN IX ITEMS
+// GEN IX Items
 extern const u32 gItemIcon_AbilityShield[];
 extern const u32 gItemIconPalette_AbilityShield[];
 extern const u32 gItemIcon_ClearAmulet[];

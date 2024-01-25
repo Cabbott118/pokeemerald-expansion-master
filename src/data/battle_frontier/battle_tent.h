@@ -1644,7 +1644,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_DENNIS] = {
         .facilityClass = FACILITY_CLASS_BUG_MANIAC,
-        .trainerName = _("DENNIS"),
+        .trainerName = _("Dennis"),
         .speechBefore = {EC_WORD_ARE, EC_WORD_YOU, EC_WORD_REALLY, EC_WORD_STRONG, EC_WORD_QUES, -1},
         .speechWin = {EC_WORD_WAHAHAHA, EC_WORD_EXCL, -1, EC_WORD_WAHAHAHA, EC_WORD_EXCL_EXCL, -1},
         .speechLose = {EC_WORD_NICE, EC_WORD_GOING, EC_WORD_EXCL, EC_WORD_I, EC_WORD_WAS, EC_WORD_CHILD_S_PLAY},

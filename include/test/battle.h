@@ -203,7 +203,7 @@
  * Define battles where opponent mons are controlled by AI, the same that runs
  * when battling regular Trainers. The flags for AI should be specified by
  * the AI_FLAGS command.
- * The rules remain the same as with the SINGLE and DOUBLE battle tests
+ * The rules remain the same as with the Single and Double battle tests
  * with some differences:
  * - opponent's action is specified by the EXPECT_MOVE(s) / EXPECT_SEND_OUT / EXPECT_SWITCH commands
  * - we don't control what opponent actually does, instead we make sure the opponent does what we expect it to do
