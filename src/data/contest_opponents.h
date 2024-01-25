@@ -175,7 +175,7 @@ const struct ContestWinner gDefaultContestWinners[] =
         .trainerId = CONTEST_AI_TRAINER_ID,
         .species = SPECIES_PLUSLE,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
-        .monName = _("PULSE"),
+        .monName = _("Pulse"),
         .trainerName = _("BAILY"),
         .contestRank = CONTEST_RANK_MASTER
     },
@@ -2210,7 +2210,7 @@ const struct ContestPokemon gContestOpponents[] =
     [CONTEST_OPPONENT_DEVON] = {
         .species = SPECIES_MILTANK,
         .nickname = _("MILKAN"),
-        .trainerName = _("DEVON"),
+        .trainerName = _("Devon"),
         .trainerGfxId = OBJ_EVENT_GFX_POKEFAN_M,
         .aiFlags = CONTEST_AI_SET_9,
         .whichRank = CONTEST_RANK_HYPER,

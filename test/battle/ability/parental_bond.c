@@ -157,4 +157,4 @@ The second strike now deals 25% of its usual damage (unless it is a set-damage m
 
 Parental Bond does not affect Z-Moves or Max Moves.
 */
-// TONS OF TESTS NEEDED. FOR NOW, THIS SINGLE TEST IS MADE TO MAKE SURE AN ISSUE WAS FIXED.
+// TONS OF TESTS NEEDED. FOR NOW, THIS Single TEST IS MADE TO MAKE SURE AN ISSUE WAS FIXED.

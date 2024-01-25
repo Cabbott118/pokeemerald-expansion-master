@@ -52,7 +52,7 @@
 #define EC_GROUP_POKEMON_NATIONAL 21
 #define EC_NUM_GROUPS             22
 
-// TRAINER
+// Trainer
 #define EC_WORD_I_CHOOSE_YOU  ((EC_GROUP_TRAINER << EC_MASK_BITS) | 0)
 #define EC_WORD_GOTCHA        ((EC_GROUP_TRAINER << EC_MASK_BITS) | 1)
 #define EC_WORD_TRADE         ((EC_GROUP_TRAINER << EC_MASK_BITS) | 2)
@@ -192,7 +192,7 @@
 #define EC_WORD_PURE_POWER    ((EC_GROUP_STATUS << EC_MASK_BITS) | 107)
 #define EC_WORD_SHIELD_DUST   ((EC_GROUP_STATUS << EC_MASK_BITS) | 108)
 
-// BATTLE
+// Battle
 #define EC_WORD_MATCH_UP     ((EC_GROUP_BATTLE << EC_MASK_BITS) | 0)
 #define EC_WORD_GO           ((EC_GROUP_BATTLE << EC_MASK_BITS) | 1)
 #define EC_WORD_NO_1         ((EC_GROUP_BATTLE << EC_MASK_BITS) | 2)
@@ -378,7 +378,7 @@
 #define EC_WORD_SHE_IS       ((EC_GROUP_PEOPLE << EC_MASK_BITS) | 73)
 #define EC_WORD_SOME         ((EC_GROUP_PEOPLE << EC_MASK_BITS) | 74)
 
-// VOICES
+// Voices
 #define EC_WORD_EXCL                        ((EC_GROUP_VOICES << EC_MASK_BITS) | 0)
 #define EC_WORD_EXCL_EXCL                   ((EC_GROUP_VOICES << EC_MASK_BITS) | 1)
 #define EC_WORD_QUES_EXCL                   ((EC_GROUP_VOICES << EC_MASK_BITS) | 2)
@@ -443,7 +443,7 @@
 #define EC_WORD_GWAH                        ((EC_GROUP_VOICES << EC_MASK_BITS) | 61)
 #define EC_WORD_WAHAHAHA                    ((EC_GROUP_VOICES << EC_MASK_BITS) | 62)
 
-// SPEECH
+// Speech
 #define EC_WORD_LISTEN      ((EC_GROUP_SPEECH << EC_MASK_BITS) | 0)
 #define EC_WORD_NOT_VERY    ((EC_GROUP_SPEECH << EC_MASK_BITS) | 1)
 #define EC_WORD_MEAN        ((EC_GROUP_SPEECH << EC_MASK_BITS) | 2)
@@ -505,7 +505,7 @@
 #define EC_WORD_INSTEAD     ((EC_GROUP_SPEECH << EC_MASK_BITS) | 58)
 #define EC_WORD_FANTASTIC   ((EC_GROUP_SPEECH << EC_MASK_BITS) | 59)
 
-// ENDINGS
+// Endings
 #define EC_WORD_WILL           ((EC_GROUP_ENDINGS << EC_MASK_BITS) | 0)
 #define EC_WORD_WILL_BE_HERE   ((EC_GROUP_ENDINGS << EC_MASK_BITS) | 1)
 #define EC_WORD_OR             ((EC_GROUP_ENDINGS << EC_MASK_BITS) | 2)
@@ -576,7 +576,7 @@
 #define EC_WORD_ONCE           ((EC_GROUP_ENDINGS << EC_MASK_BITS) | 67)
 #define EC_WORD_ANYWHERE       ((EC_GROUP_ENDINGS << EC_MASK_BITS) | 68)
 
-// FEELINGS
+// Feelings
 #define EC_WORD_MEET          ((EC_GROUP_FEELINGS << EC_MASK_BITS) | 0)
 #define EC_WORD_PLAY          ((EC_GROUP_FEELINGS << EC_MASK_BITS) | 1)
 #define EC_WORD_HURRIED       ((EC_GROUP_FEELINGS << EC_MASK_BITS) | 2)
@@ -647,7 +647,7 @@
 #define EC_WORD_UNDERSTAND    ((EC_GROUP_FEELINGS << EC_MASK_BITS) | 67)
 #define EC_WORD_UNDERSTANDS   ((EC_GROUP_FEELINGS << EC_MASK_BITS) | 68)
 
-// CONDITIONS
+// Conditions
 #define EC_WORD_HOT           ((EC_GROUP_CONDITIONS << EC_MASK_BITS) | 0)
 #define EC_WORD_EXISTS        ((EC_GROUP_CONDITIONS << EC_MASK_BITS) | 1)
 #define EC_WORD_EXCESS        ((EC_GROUP_CONDITIONS << EC_MASK_BITS) | 2)
@@ -718,7 +718,7 @@
 #define EC_WORD_SEEMS         ((EC_GROUP_CONDITIONS << EC_MASK_BITS) | 67)
 #define EC_WORD_BADLY         ((EC_GROUP_CONDITIONS << EC_MASK_BITS) | 68)
 
-// ACTIONS
+// Actions
 #define EC_WORD_MEETS      ((EC_GROUP_ACTIONS << EC_MASK_BITS) | 0)
 #define EC_WORD_CONCEDE    ((EC_GROUP_ACTIONS << EC_MASK_BITS) | 1)
 #define EC_WORD_GIVE       ((EC_GROUP_ACTIONS << EC_MASK_BITS) | 2)
@@ -798,7 +798,7 @@
 #define EC_WORD_FAINT      ((EC_GROUP_ACTIONS << EC_MASK_BITS) | 76)
 #define EC_WORD_FAINTED    ((EC_GROUP_ACTIONS << EC_MASK_BITS) | 77)
 
-// LIFESTYLE
+// Lifestyle
 #define EC_WORD_CHORES        ((EC_GROUP_LIFESTYLE << EC_MASK_BITS) | 0)
 #define EC_WORD_HOME          ((EC_GROUP_LIFESTYLE << EC_MASK_BITS) | 1)
 #define EC_WORD_MONEY         ((EC_GROUP_LIFESTYLE << EC_MASK_BITS) | 2)
@@ -845,7 +845,7 @@
 #define EC_WORD_RENTAL        ((EC_GROUP_LIFESTYLE << EC_MASK_BITS) | 43)
 #define EC_WORD_WORLD         ((EC_GROUP_LIFESTYLE << EC_MASK_BITS) | 44)
 
-// HOBBIES
+// Hobbies
 #define EC_WORD_IDOL          ((EC_GROUP_HOBBIES << EC_MASK_BITS) | 0)
 #define EC_WORD_ANIME         ((EC_GROUP_HOBBIES << EC_MASK_BITS) | 1)
 #define EC_WORD_SONG          ((EC_GROUP_HOBBIES << EC_MASK_BITS) | 2)
@@ -948,7 +948,7 @@
 #define EC_WORD_NIGHT      ((EC_GROUP_TIME << EC_MASK_BITS) | 43)
 #define EC_WORD_WEEK       ((EC_GROUP_TIME << EC_MASK_BITS) | 44)
 
-// MISC
+// Misc
 #define EC_WORD_HIGHS            ((EC_GROUP_MISC << EC_MASK_BITS) | 0)
 #define EC_WORD_LOWS             ((EC_GROUP_MISC << EC_MASK_BITS) | 1)
 #define EC_WORD_UM               ((EC_GROUP_MISC << EC_MASK_BITS) | 2)
@@ -992,7 +992,7 @@
 #define EC_WORD_LEFT             ((EC_GROUP_MISC << EC_MASK_BITS) | 40)
 #define EC_WORD_RIGHT            ((EC_GROUP_MISC << EC_MASK_BITS) | 41)
 
-// ADJECTIVES
+// Adjectives
 #define EC_WORD_WANDERING     ((EC_GROUP_ADJECTIVES << EC_MASK_BITS) | 0)
 #define EC_WORD_RICKETY       ((EC_GROUP_ADJECTIVES << EC_MASK_BITS) | 1)
 #define EC_WORD_ROCK_SOLID    ((EC_GROUP_ADJECTIVES << EC_MASK_BITS) | 2)

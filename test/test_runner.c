@@ -313,7 +313,7 @@ top:
                 }
                 break;
             case TEST_RESULT_PASS:
-                result = "PASS";
+                result = "Pass";
                 break;
             case TEST_RESULT_ASSUMPTION_FAIL:
                 result = "ASSUMPTION_FAIL";

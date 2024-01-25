@@ -44,7 +44,7 @@ enum
 {
     ENABLE,
     DISABLE,
-    CHECK // unused
+    Check // unused
 };
 
 // Do save types

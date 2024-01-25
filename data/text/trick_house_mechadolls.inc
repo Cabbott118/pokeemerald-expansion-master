@@ -8,10 +8,10 @@ gTrickHouse_Mechadoll_Taillow::
 	.string "TAILLOW$"
 
 gTrickHouse_Mechadoll_Azurill::
-	.string "AZURILL$"
+	.string "Azurill$"
 
 gTrickHouse_Mechadoll_Lotad::
-	.string "LOTAD$"
+	.string "Lotad$"
 
 gTrickHouse_Mechadoll_Wingull::
 	.string "WINGULL$"
@@ -26,10 +26,10 @@ gTrickHouse_Mechadoll_Nincada::
 	.string "NINCADA$"
 
 gTrickHouse_Mechadoll_Ralts::
-	.string "RALTS$"
+	.string "Ralts$"
 
 gTrickHouse_Mechadoll_Zigzagoon::
-	.string "ZIGZAGOON$"
+	.string "Zigzagoon$"
 
 gTrickHouse_Mechadoll_Slakoth::
 	.string "SLAKOTH$"
@@ -41,7 +41,7 @@ gTrickHouse_Mechadoll_Shroomish::
 	.string "SHROOMISH$"
 
 gTrickHouse_Mechadoll_Zigzagoon2::
-	.string "ZIGZAGOON$"
+	.string "Zigzagoon$"
 
 gTrickHouse_Mechadoll_Poochyena3::
 	.string "POOCHYENA$"
@@ -53,10 +53,10 @@ gTrickHouse_Mechadoll_Carvanha::
 	.string "CARVANHA$"
 
 gTrickHouse_Mechadoll_BurnHeal::
-	.string "BURN HEAL$"
+	.string "Burn Heal$"
 
 gTrickHouse_Mechadoll_HarborMail::
-	.string "HARBOR MAIL$"
+	.string "Harbor Mail$"
 
 gTrickHouse_Mechadoll_SamePrice::
 	.string "Same price$"
