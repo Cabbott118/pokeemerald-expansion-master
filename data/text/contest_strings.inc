@@ -197,7 +197,7 @@ gText_RainDance::
 	.string "Rain Dance$"
 
 gText_Rage::
-	.string "RAGE$"
+	.string "Rage$"
 
 gText_FocusEnergy::
 	.string "Focus Energy$"
