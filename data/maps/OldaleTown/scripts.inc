@@ -25,7 +25,7 @@ OldaleTown_EventScript_BlockWestEntrance::
 	return
 
 OldaleTown_EventScript_MoveMartEmployee::
-	setobjectxyperm LOCALID_MART_EMPLOYEE, 13, 14
+	setobjectxyperm LOCALID_MART_EMPLOYEE, 11, 14
 	setobjectmovementtype LOCALID_MART_EMPLOYEE, MOVEMENT_TYPE_FACE_DOWN
 	return
 
@@ -99,6 +99,8 @@ OldaleTown_Movement_EmployeeEast:
 	walk_up
 	walk_up
 	walk_up
+	walk_right
+	walk_up
 	walk_up
 	walk_up
 	walk_up
@@ -112,6 +114,8 @@ OldaleTown_Movement_EmployeeSouth:
 	walk_right
 	walk_up
 	walk_up
+	walk_right
+	walk_up
 	walk_up
 	walk_up
 	walk_up
@@ -122,6 +126,8 @@ OldaleTown_Movement_EmployeeNorth:
 	walk_up
 	walk_up
 	walk_up
+	walk_up
+	walk_right
 	walk_up
 	walk_up
 	walk_up
@@ -151,17 +157,23 @@ OldaleTown_Movement_PlayerEast:
 	walk_up
 	walk_up
 	walk_up
+	walk_right
+	walk_up
 	walk_up
 	walk_up
 	step_end
 
 OldaleTown_Movement_PlayerSouth:
 	delay_16
+	face_left
 	delay_16
 	delay_16
+	face_up
 	delay_16
 	walk_up
 	walk_up
+	walk_up
+	walk_right
 	walk_up
 	walk_up
 	walk_up
@@ -172,6 +184,8 @@ OldaleTown_Movement_PlayerNorth:
 	walk_up
 	walk_up
 	walk_up
+	walk_up
+	walk_right
 	walk_up
 	walk_up
 	walk_up
@@ -344,8 +358,8 @@ OldaleTown_Movement_ReturnToOriginalPosition:
 	step_end
 
 OldaleTown_Text_SavingMyProgress:
-	.string "I want to take a rest, so I'm saving my\n"
-	.string "progress.$"
+	.string "I'd like to take a poop in peace!\n"
+	.string "Please go away!$"
 
 OldaleTown_Text_IWorkAtPokemonMart:
 	.string "Hi!\n"
