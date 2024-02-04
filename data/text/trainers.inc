@@ -1935,7 +1935,7 @@ Route114_Text_TyraDefeat:
 	.string "Tyra: What an amazing battle style!$"
 
 Route114_Text_TyraPostBattle:
-	.string "Tyra: I was teaching my junior IVY\n"
+	.string "Tyra: I was teaching my junior Ivy\n"
 	.string "about Pokémon.$"
 
 Route114_Text_TyraNotEnoughMons:
@@ -1944,18 +1944,18 @@ Route114_Text_TyraNotEnoughMons:
 	.string "Pokémon isn't enough!$"
 
 Route114_Text_IvyIntro:
-	.string "IVY: Who taught you about Pokémon?$"
+	.string "Ivy: Who taught you about Pokémon?$"
 
 Route114_Text_IvyDefeat:
-	.string "IVY: What an amazing battle style!$"
+	.string "Ivy: What an amazing battle style!$"
 
 Route114_Text_IvyPostBattle:
-	.string "IVY: I started training Pokémon\n"
+	.string "Ivy: I started training Pokémon\n"
 	.string "because Tyra, my student mentor,\l"
 	.string "taught me!$"
 
 Route114_Text_IvyNotEnoughMons:
-	.string "IVY: Do you only have one Pokémon?\n"
+	.string "Ivy: Do you only have one Pokémon?\n"
 	.string "I think it must feel lonesome.$"
 
 Route114_Text_KaiIntro:
@@ -2629,7 +2629,7 @@ Route118_Text_ChesterPostBattle:
 	.string "to fly more freely…$"
 
 Route118_Text_BarnyIntro:
-	.string "I'm a FISHERMAN, but also a Trainer.\n"
+	.string "I'm a Fisherman, but also a Trainer.\n"
 	.string "I'm raising the Pokémon I caught.$"
 
 Route118_Text_BarnyDefeat:
@@ -2651,7 +2651,7 @@ Route118_Text_WadeDefeat:
 
 Route118_Text_WadePostBattle:
 	.string "Come to think of it, fishing is a battle\n"
-	.string "between a FISHERMAN and a Pokémon.$"
+	.string "between a Fisherman and a Pokémon.$"
 
 Route118_Text_DaltonIntro:
 	.string "Let my melody rock your soul!$"
@@ -3194,36 +3194,36 @@ Route121_Text_TammyPostBattle:
 	.string "at work there…$"
 
 Route121_Text_KateIntro:
-	.string "KATE: Together, we're fearless!\n"
+	.string "Kate: Together, we're fearless!\n"
 	.string "We'll demonstrate how tough we are!$"
 
 Route121_Text_KateDefeat:
-	.string "KATE: I blew it in front of my junior\n"
+	.string "Kate: I blew it in front of my junior\n"
 	.string "student partner…$"
 
 Route121_Text_KatePostBattle:
-	.string "KATE: When someone's relying on me,\n"
+	.string "Kate: When someone's relying on me,\n"
 	.string "I get this urge to look cool in front\l"
 	.string "of them…$"
 
 Route121_Text_KateNotEnoughMons:
-	.string "KATE: If you've only got one Pokémon,\n"
+	.string "Kate: If you've only got one Pokémon,\n"
 	.string "we can't battle with you.\p"
 	.string "That would be bullying.$"
 
 Route121_Text_JoyIntro:
-	.string "JOY: Together, we're fearless!\n"
+	.string "Joy: Together, we're fearless!\n"
 	.string "We'll demonstrate how tough we are!$"
 
 Route121_Text_JoyDefeat:
-	.string "JOY: Please forgive me, KATE!$"
+	.string "Joy: Please forgive me, Kate!$"
 
 Route121_Text_JoyPostBattle:
-	.string "JOY: Ehehe, I'll have to train with KATE,\n"
+	.string "Joy: Ehehe, I'll have to train with Kate,\n"
 	.string "my senior student partner, again.$"
 
 Route121_Text_JoyNotEnoughMons:
-	.string "JOY: You need at least two Pokémon\n"
+	.string "Joy: You need at least two Pokémon\n"
 	.string "if you're going to challenge us!$"
 
 Route121_Text_JessicaIntro:
@@ -3431,33 +3431,33 @@ Route123_Text_JackiPostRematch:
 	.string "That could be a psychic power, too.$"
 
 Route123_Text_MiuIntro:
-	.string "MIU: Hello, Trainer. I hope your\n"
+	.string "Miu: Hello, Trainer. I hope your\n"
 	.string "Pokémon won't cry when they lose.$"
 
 Route123_Text_MiuDefeat:
-	.string "MIU: Uh-oh, we lost.$"
+	.string "Miu: Uh-oh, we lost.$"
 
 Route123_Text_MiuPostBattle:
-	.string "MIU: Trainer, your Pokémon are\n"
+	.string "Miu: Trainer, your Pokémon are\n"
 	.string "strong because you are friends.$"
 
 Route123_Text_MiuNotEnoughMons:
-	.string "MIU: It's no fun to battle if you\n"
+	.string "Miu: It's no fun to battle if you\n"
 	.string "don't have two Pokémon.$"
 
 Route123_Text_YukiIntro:
-	.string "YUKI: Okay!\n"
+	.string "Yuki: Okay!\n"
 	.string "We're beating the Trainer's Pokémon!$"
 
 Route123_Text_YukiDefeat:
-	.string "YUKI: Uh-oh, we lost.$"
+	.string "Yuki: Uh-oh, we lost.$"
 
 Route123_Text_YukiPostBattle:
-	.string "YUKI: Why are you so strong?\n"
+	.string "Yuki: Why are you so strong?\n"
 	.string "We've never lost before.$"
 
 Route123_Text_YukiNotEnoughMons:
-	.string "YUKI: It's no fun to battle if you\n"
+	.string "Yuki: It's no fun to battle if you\n"
 	.string "don't have two Pokémon.$"
 
 Route123_Text_KindraIntro:
@@ -3860,36 +3860,36 @@ Route125_Text_ErnestRematchPostBattle:
 	.string "high tide to low tide. Don't forget!$"
 
 Route125_Text_KimIntro:
-	.string "KIM: A funny old man lives in the\n"
+	.string "Kim: A funny old man lives in the\n"
 	.string "Shoal Cave. Someone told me.\l"
 	.string "Are you going to see him, too?$"
 
 Route125_Text_KimDefeat:
-	.string "KIM: I thought we would win.$"
+	.string "Kim: I thought we would win.$"
 
 Route125_Text_KimPostBattle:
-	.string "KIM: A funny old man lives in the\n"
+	.string "Kim: A funny old man lives in the\n"
 	.string "Shoal Cave, doesn't he?\p"
-	.string "Let's go see him, IRIS!$"
+	.string "Let's go see him, Iris!$"
 
 Route125_Text_KimNotEnoughMons:
-	.string "KIM: No, no, no! You need two Pokémon,\n"
+	.string "Kim: No, no, no! You need two Pokémon,\n"
 	.string "or it's just no good!$"
 
 Route125_Text_IrisIntro:
-	.string "IRIS: KIM, can you tell me what we're\n"
+	.string "Iris: Kim, can you tell me what we're\n"
 	.string "looking for out here?$"
 
 Route125_Text_IrisDefeat:
-	.string "IRIS: Oh, we came sort of close.$"
+	.string "Iris: Oh, we came sort of close.$"
 
 Route125_Text_IrisPostBattle:
-	.string "IRIS: KIM, are we really going into\n"
+	.string "Iris: Kim, are we really going into\n"
 	.string "the Shoal Cave?\l"
 	.string "We'll get all wet.$"
 
 Route125_Text_IrisNotEnoughMons:
-	.string "IRIS: Oh, we could never, ever do\n"
+	.string "Iris: Oh, we could never, ever do\n"
 	.string "anything like a 2-on-1 battle.$"
 
 Route125_Text_PresleyIntro:

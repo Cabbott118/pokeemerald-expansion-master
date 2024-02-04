@@ -396,5 +396,5 @@ SlateportCity_PokemonFanClub_Text_Zigzagoon:
 	.string "Zigzagoon: Kyuuu…$"
 
 SlateportCity_PokemonFanClub_Text_Azumarill:
-	.string "AZUMARILL: Marimari?$"
+	.string "Azumarill: Marimari?$"
 

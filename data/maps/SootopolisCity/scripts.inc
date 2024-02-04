@@ -1681,7 +1681,7 @@ SootopolisCity_Text_MaxieArchieLeft:
 	.string "Steven: It looks like both Maxie and\n"
 	.string "Archie have gone away somewhere.\p"
 	.string "Perhaps they've gone to Mt. Pyre to\n"
-	.string "return those ORBS…$"
+	.string "return those Orbs…$"
 
 SootopolisCity_Text_HaventYouScaledSkyPillar:
 	.string "Wallace: Oh?\n"

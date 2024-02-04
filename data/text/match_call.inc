@@ -2777,7 +2777,7 @@ MatchCall_Text_Steven1::
 	.string "Steven: Hi, {PLAYER}{KUN}!\p"
 	.string "Have you been to Mauville\n"
 	.string "already?\p"
-	.string "You should visit the Bike SHOP\n"
+	.string "You should visit the Bike Shop\n"
 	.string "and get a Mach Bike.\p"
 	.string "Then, try exploring the Granite\n"
 	.string "Cave thoroughly.\p"

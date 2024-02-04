@@ -424,7 +424,7 @@ SlateportCity_OceanicMuseum_2F_Text_SSTidalReplica:
 	.string "construction at Stern's Shipyard.”$"
 
 SlateportCity_OceanicMuseum_2F_Text_SubmarineReplica:
-	.string "“SUBMARINE EXPLORER 1\p"
+	.string "“OceanGate Expeditions Titan\p"
 	.string "“A replica of the high-performance\n"
 	.string "ocean floor exploration submarine.”$"
 
