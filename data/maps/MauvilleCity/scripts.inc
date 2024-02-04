@@ -585,8 +585,8 @@ MauvilleCity_Text_WattsonNeedFavorTakeKey:
 	.string "Mauville City has an underground\n"
 	.string "sector called New Mauville.\p"
 	.string "{PLAYER}{KUN}, I'd like you to go there and\n"
-	.string "switch off the GENERATOR.\p"
-	.string "The GENERATOR has been running a bit\n"
+	.string "switch off the Generator.\p"
+	.string "The Generator has been running a bit\n"
 	.string "haywire. It's getting unsafe.\p"
 	.string "Here, this is the Key to get into\n"
 	.string "New Mauville.$"
@@ -604,7 +604,7 @@ MauvilleCity_Text_WattsonThanksTakeTM:
 	.string "I knew it, {PLAYER}{KUN}! I knew I'd made\n"
 	.string "the right choice asking you!\p"
 	.string "This is my thanks--a TM containing\n"
-	.string "THUNDERBOLT!\p"
+	.string "Thunderbolt!\p"
 	.string "Go on, you've earned it!$"
 
 MauvilleCity_Text_WattsonYoungTakeCharge:

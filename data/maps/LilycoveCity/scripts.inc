@@ -416,7 +416,7 @@ LilycoveCity_Text_MayShoppingLetsBattle:
 	.string "May: Oh, hey?\n"
 	.string "{PLAYER}{KUN}, are you shopping, too?\p"
 	.string "I bought a whole bunch of Dolls and\n"
-	.string "POSTERS.\p"
+	.string "Posters.\p"
 	.string "Of course, I've also caught a lot of\n"
 	.string "Pokémon, and I'm raising them\l"
 	.string "properly, too.\p"
@@ -553,7 +553,7 @@ LilycoveCity_Text_MovedLootIntoHideoutToday:
 	.string "I was just talking to myself!$"
 
 LilycoveCity_Text_ChanceToDoBigThings:
-	.string "I'm just a GRUNT, so I don't know what\n"
+	.string "I'm just a Grunt, so I don't know what\n"
 	.string "the Boss is thinking…\p"
 	.string "But being on Team Aqua, I know I'll get\n"
 	.string "the chance to do big things!\p"
@@ -598,7 +598,7 @@ LilycoveCity_Text_GoingToMoveDeleterForHMs:
 	.string "and make it forget HM moves.$"
 
 LilycoveCity_Text_ImFromKanto:
-	.string "I came from KANTO.\p"
+	.string "I came from Kanto.\p"
 	.string "The Hoenn region is beautiful with\n"
 	.string "all its water and verdant nature.\p"
 	.string "Hunh? Wait a second…\p"
@@ -676,7 +676,7 @@ LilycoveCity_Text_ContestHallSign:
 	.string "“The gathering place for Trainers!”$"
 
 LilycoveCity_Text_MotelSign:
-	.string "COVE LILY MOTEL\p"
+	.string "Cove Lily Motel\p"
 	.string "“Remember us as COVE LILY of\n"
 	.string "Lilycove.”$"
 

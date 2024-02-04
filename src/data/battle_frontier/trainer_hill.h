@@ -1654,7 +1654,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                             .spDefenseIV = 5,
                                             .abilityNum = 0,
                                             .personality = 0x87,
-                                            .nickname = _("SABLEYE"),
+                                            .nickname = _("Sableye"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [2] =
@@ -2409,7 +2409,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                             .spDefenseIV = 15,
                                             .abilityNum = 0,
                                             .personality = 0x88FE980F,
-                                            .nickname = _("SPINDA"),
+                                            .nickname = _("Spinda"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [4] =
@@ -2479,7 +2479,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                             .spDefenseIV = 15,
                                             .abilityNum = 0,
                                             .personality = 0xE2880098,
-                                            .nickname = _("SPINDA"),
+                                            .nickname = _("Spinda"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [1] =
@@ -2762,7 +2762,7 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                                             .spDefenseIV = 15,
                                             .abilityNum = 0,
                                             .personality = 0x2F,
-                                            .nickname = _("RELICANTH"),
+                                            .nickname = _("Relicanth"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [1] =

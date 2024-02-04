@@ -300,7 +300,7 @@ Route113_GlassWorkshop_Text_GoCollectAshWithThis:
 	.string "Go collect ashes with this, huff-puff.$"
 
 Route113_GlassWorkshop_Text_ExplainSootSack:
-	.string "Just take that SOOT SACK and walk\n"
+	.string "Just take that Soot Sack and walk\n"
 	.string "through piles of ash, huff-puff.\p"
 	.string "And it will fill up with the volcanic ash,\n"
 	.string "huff-puff.\p"

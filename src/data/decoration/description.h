@@ -337,11 +337,11 @@ const u8 DecorDesc_LONG_POSTER[] = _(
 
 const u8 DecorDesc_SEA_POSTER[] = _(
     "A large poster with\n"
-        "a RELICANTH print.");
+        "a Relicanth print.");
 
 const u8 DecorDesc_SKY_POSTER[] = _(
     "A large poster with\n"
-        "a WINGULL print.");
+        "a Wingull print.");
 
 const u8 DecorDesc_KISS_POSTER[] = _(
     "A large poster with\n"
@@ -493,12 +493,12 @@ const u8 DecorDesc_ZIGZAG_CUSHION[] = _(
         "a mat or a desk.");
 
 const u8 DecorDesc_SPIN_CUSHION[] = _(
-    "A SPINDA cushion.\n"
+    "A Spinda cushion.\n"
         "Place it on a mat\n"
         "or a desk.");
 
 const u8 DecorDesc_DIAMOND_CUSHION[] = _(
-    "A SABLEYE cushion.\n"
+    "A Sableye cushion.\n"
         "Place it on a mat\n"
         "or a desk.");
 
